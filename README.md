@@ -1,1 +1,0 @@
-# Sephora-Clone-Project
