@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket | Sephora</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #main{
+            width: 65%;
+            border: 2px solid rgb(25, 239, 68);
+            height: 800px;
+            
+            display: grid;
+            grid-template-columns: 60% 35%;
+            /* padding: 2px; */
+            gap: 5%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #left{
+            /* width: 65%; */
+            border: 2px solid black;
+            height: 800px;  
+            
+            
+        }
+        #right{
+            /* width: 35%; */
+            border: 2px solid black;
+            height: 800px;
+        }
+        #up{
+            width: 100%;
+            height: 170px;
+            border: 2px solid royalblue;
+            display: flex;
+        }
+        #upleft{
+          flex-basis: 70%;
+          border: 2px solid royalblue;
+          padding-left: 5px;
+          
+          
+        }
+        #upleft p {
+            display: flex;
+            align-items: center;
+        }
+        #upright{
+            flex-basis: 30%;
+            border: 2px solid royalblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #down{
+            /* margin-top: 30px; */
+            width: 100%;
+            height: 570px;
+            border: 2px solid rgb(0, 2, 8);
+            margin-top: 30px;
+            background-color: #f6f6f8;
+            
+        }
+        #upright button{
+            padding: 10px;
+            font-size: large;
+            border-radius: 25px;
+            background-color: #ffffff;
+            border: 3px solid black;
+            
+        }
+        #down-down{
+            background-color: #ffffff;
+            width: 95%;
+            border: 2px solid red;
+            margin: auto;
+            
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        #down-down div p {
+            display: flex;
+            align-items: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 style="position: relative;left: 17.5%;">My Basket</h1>
+  <div id="main">
+    
+
+    <div id="left">
+        <div id="up">
+            <div id="upleft">
+                <h2>The Sephora Credit Card Program</h2>
+                <p><img src="https://www.sephora.com/contentimages/creditcard/cardicon/CreditCard.svg" style="width: 10%;">25% on this order when you open and use either Sephora Credit Card today*</p>
+                <p>*Subject to credit approval. Exclusions apply.</p>
+            </div>
+            <div id="upright">
+                <button>SEE DETAILS</button>
+                
+            </div>
+        </div>
+        <!-- update cart here -->
+        
+        <div id="down">
+            <div style="flex-basis: 100%;border: 2px solid salmon; padding: 5px;" >
+                <h1 >Get It Shipped (<span id="totalItems">0</span>)</h1>
+            </div>
+          
+           <div id="down-down">
+            <div >
+                <p><img style="width: 20%;" src="https://thumbs.dreamstime.com/b/thin-line-icon-truck-delivery-symbol-vector-sign-isolated-white-background-simple-logo-illustration-graphic-web-design-177538793.jpg" alt="">Beauty Insiders enjoy FREE standard shipping on all orders.
+
+                    Free returns on all purchases.*</p>
+            </div>
+            <div id="cart-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est laboriosam, repellendus, unde modi distinctio quos fugit ullam dignissimos expedita ad optio, corporis veritatis nihil! Dicta animi quas debitis voluptate aliquid.
+            Maxime modi vero repellat maiores quidem quae non, quaerat mollitia, unde rerum nobis obcaecati corporis harum dolorum facere debitis dignissimos. Eos velit expedita illum! Quos quo iusto aliquid tempore dolores!
+            Recusandae repudiandae harum laborum voluptate. Similique facere repellendus maiores vero expedita velit, eos eum, corporis sed architecto incidunt fugiat impedit vel. Nihil facilis, aperiam natus dolor vero officia fuga recusandae?
+            Ipsam quae aliquid exercitationem nemo quisquam, autem, dolore ab ex unde aspernatur obcaecati dolor assumenda vel numquam earum, quidem neque odio voluptates delectus odit corrupti officiis? Quasi impedit pariatur recusandae.
+            In, laborum? Cumque perspiciatis debitis dolor consequuntur molestiae repellat esse rerum nostrum libero deserunt dolorum magni, ut, quas ab corporis unde placeat! Autem debitis excepturi voluptatum? Doloribus maxime voluptatem harum.</div>
+           
+           </div>
+           
+
+        </div>
+
+    </div>
+    <div id="right">
+        <h1 id="cartTotal"> I am total</h1>
+    </div>
+  </div>
+
+    <script src="cart.js">
+
+    </script>
+</body>
+</html>
