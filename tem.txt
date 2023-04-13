@@ -1,0 +1,5 @@
+Nitin Sharma   --> Cart & Payment, Other
+Md Arshad      --> Sign Up, Login, Homepage
+Arvind Patil   --> Navbar, Footer, Other
+Sarita         --> Wishlist
+Sangram Yadav  --> ........
