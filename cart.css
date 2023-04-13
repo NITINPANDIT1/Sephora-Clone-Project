@@ -1,0 +1,26 @@
+#cartMain{
+    border-top: 1px solid black;
+    display: grid;
+    grid-template-columns: 25% 70%;
+    padding: 10px;
+}
+#mainRight{
+    display: block;
+}
+#mainRight>div:first-child{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0px;
+}
+
+#mainRight>div:last-child{
+    display: flex;
+    justify-content: left;
+    gap: 25px;
+    margin: 5px 0px;
+    font-size: large;
+}
+#mainRight>div:last-child>select{
+    padding: 5px;
+    font-size: large;
+}

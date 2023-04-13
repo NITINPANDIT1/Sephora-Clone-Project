@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basket | Sephora</title>
+    <link rel="stylesheet" href="cart.css">
     <style>
         *{
             margin: 0;
@@ -37,14 +38,15 @@
         }
         #up{
             width: 100%;
-            height: 170px;
+            height: 150px;
             border: 1px solid #acaaaa;
             display: flex;
         }
         #upleft{
           flex-basis: 70%;
           border: 1px solid #acaaaa;
-          padding-left: 5px;
+          padding-left: 15px;
+          padding-top:10px;
           
           
         }
@@ -81,9 +83,22 @@
             width: 95%;
             border: 1px solid #acaaaa;
             margin: auto;
-            
+            text-align: center;
             padding: 20px;
             box-sizing: border-box;
+        }
+        #down-down button{
+            background-color: black;
+            color: white;
+            border: none;
+            font-size: 24px;
+        padding: 0.5em 1.125em;
+        margin: 12px;
+        border-radius: 25px;
+        border: 1px solid black;
+    /* align-items: center; */
+      width: 38%;
+    text-align: center;
         }
         #down-down div p {
             display: flex;
@@ -191,7 +206,7 @@
             grid-template-rows: 100px;
             gap: 2%;
             justify-content: space-around;
-            border: 1px solid black;
+            /* border: 1px solid black; */
             
 
         }
@@ -238,15 +253,27 @@
 
                   <br>  Free returns on all purchases.*</p>
             </div>
+            <br>
             <div id="optional">
                 <div><p>Get two free samples with every order </p>
                     <a href="">SELECT YOUR SAMPLES</a>
                 </div>
                 <div><p>Sign in to see your Beauty Insider points
                     & redeem your rewards</p></div>
+                    
             </div>
+            <hr>
+            
             <div id="cart-container">
-                   
+                <div>
+                    <h3>Your basket is currently empty <br>
+
+                        Please sign in if you are trying to retrieve a basket created in the past.
+                    </h3>
+                    <button id="signin">Sign In</button>
+                </div>
+                
+               
 
             </div>
            
