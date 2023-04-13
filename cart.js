@@ -38,7 +38,9 @@ function displayCart(){
  total = cartData.reduce(function(acc,elem){
     return acc + Number(elem.Price);
 },0)
-document.querySelector("#cartTotal").textContent = total;
+document.querySelector("#cartTotal1").textContent =`$${total}`;
+document.querySelector("#cartTotal2").textContent =`$${total}`;
+
 }
 
 let btnplus = document.createElement("button")

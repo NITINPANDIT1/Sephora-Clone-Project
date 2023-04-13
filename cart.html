@@ -12,7 +12,7 @@
         }
         #main{
             width: 65%;
-            border: 2px solid rgb(25, 239, 68);
+            /* border: 2px solid rgb(25, 239, 68); */
             height: 800px;
             
             display: grid;
@@ -24,25 +24,26 @@
         }
         #left{
             /* width: 65%; */
-            border: 2px solid black;
-            height: 800px;  
+            border: 1px solid #acaaaa;
+            height: fit-content;  
             
             
         }
         #right{
             /* width: 35%; */
-            border: 2px solid black;
-            height: 800px;
+            /* border: 2px solid black; */
+            height: fit-content;
+            padding: 0px 15px;
         }
         #up{
             width: 100%;
             height: 170px;
-            border: 2px solid royalblue;
+            border: 1px solid #acaaaa;
             display: flex;
         }
         #upleft{
           flex-basis: 70%;
-          border: 2px solid royalblue;
+          border: 1px solid #acaaaa;
           padding-left: 5px;
           
           
@@ -53,7 +54,7 @@
         }
         #upright{
             flex-basis: 30%;
-            border: 2px solid royalblue;
+            border: 1px solid #acaaaa;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -62,7 +63,7 @@
             /* margin-top: 30px; */
             width: 100%;
             height: 570px;
-            border: 2px solid rgb(0, 2, 8);
+            border: 1px solid #acaaaa(0, 2, 8);
             margin-top: 30px;
             background-color: #f6f6f8;
             
@@ -78,7 +79,7 @@
         #down-down{
             background-color: #ffffff;
             width: 95%;
-            border: 2px solid red;
+            border: 1px solid #acaaaa;
             margin: auto;
             
             padding: 20px;
@@ -87,6 +88,122 @@
         #down-down div p {
             display: flex;
             align-items: center;
+        }
+        #pay{
+            display: block;
+            
+        }
+        .pay{
+            margin: 10px;
+            display: flex;
+            justify-content: space-between;
+            /* border: 1px solid yellow; */
+            font-size: 20px;
+        }
+        .underline:hover{
+         text-decoration: underline;
+        
+        }
+        .underline{
+         font-weight: 50;
+        }
+        #pay p{
+         padding: 0px 10px;
+        }
+        #button{
+            display: flex;
+         
+     flex-direction: column;
+    
+        }
+        #button button{
+     font-size: 24px;
+    padding: 0.5em 1.125em;
+    margin: 12px;
+    border-radius: 25px;
+     border: 1px solid black;
+    /* align-items: center; */
+   
+    text-align: center;
+        }
+        #button>button:first-child{
+            background-color: #cf112c;
+            color: white;
+            border: none;
+            
+        }#button>button:first-child:hover{
+            background-color: #f32040;
+        }
+        #button button img{
+            width: 30%;
+          
+          
+        }
+        #right-1stchild{
+            border: 1px solid #acaaaa;
+            /* margin: 10px; */
+            
+        }
+        #promocode p{
+            margin-left: 60%;
+        }
+        #promocode p:hover{
+            text-decoration: underline;
+            font-weight: 300;
+        }
+        #promocode{
+            border: 1px solid #acaaaa;
+            text-align: center;
+            margin-top: 30px;
+            padding: .5rem;
+            
+        }
+        #promocode input{
+          font-size: x-large;
+          padding: .5rem 1rem ;
+          border-radius: 5px;
+          margin: 10px;
+        }
+        #assitance{
+            padding: 20px;
+        }
+        #assiImages{
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+            /* border: 2px solid rgb(41, 2, 2); */
+            width: 90%;
+        }
+        #assiImages img{
+            width: 15%;
+            
+        }
+        hr{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        #optional{
+            display: grid;
+            grid-template-columns: 49% 49%;
+            grid-template-rows: 100px;
+            gap: 2%;
+            justify-content: space-around;
+            border: 1px solid black;
+            
+
+        }
+        #optional div{
+            margin:2px;
+            text-align: center;
+            font-size: 20px;
+            border: 1px solid black;
+           
+        }
+        #optional div p{
+            padding: 10px;
         }
         
     </style>
@@ -111,21 +228,27 @@
         <!-- update cart here -->
         
         <div id="down">
-            <div style="flex-basis: 100%;border: 2px solid salmon; padding: 5px;" >
+            <div style="flex-basis: 100%; padding: 5px;" >
                 <h1 >Get It Shipped (<span id="totalItems">0</span>)</h1>
             </div>
           
            <div id="down-down">
             <div >
-                <p><img style="width: 20%;" src="https://thumbs.dreamstime.com/b/thin-line-icon-truck-delivery-symbol-vector-sign-isolated-white-background-simple-logo-illustration-graphic-web-design-177538793.jpg" alt="">Beauty Insiders enjoy FREE standard shipping on all orders.
+                <p><img style="width: 10%;" src="https://c8.alamy.com/comp/2F4RK7F/fast-delivery-truck-icon-express-delivery-line-symbol-on-white-background-editable-vector-illustration-2F4RK7F.jpg" alt=""> Insiders enjoy FREE standard shipping on all orders.
 
-                    Free returns on all purchases.*</p>
+                  <br>  Free returns on all purchases.*</p>
             </div>
-            <div id="cart-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est laboriosam, repellendus, unde modi distinctio quos fugit ullam dignissimos expedita ad optio, corporis veritatis nihil! Dicta animi quas debitis voluptate aliquid.
-            Maxime modi vero repellat maiores quidem quae non, quaerat mollitia, unde rerum nobis obcaecati corporis harum dolorum facere debitis dignissimos. Eos velit expedita illum! Quos quo iusto aliquid tempore dolores!
-            Recusandae repudiandae harum laborum voluptate. Similique facere repellendus maiores vero expedita velit, eos eum, corporis sed architecto incidunt fugiat impedit vel. Nihil facilis, aperiam natus dolor vero officia fuga recusandae?
-            Ipsam quae aliquid exercitationem nemo quisquam, autem, dolore ab ex unde aspernatur obcaecati dolor assumenda vel numquam earum, quidem neque odio voluptates delectus odit corrupti officiis? Quasi impedit pariatur recusandae.
-            In, laborum? Cumque perspiciatis debitis dolor consequuntur molestiae repellat esse rerum nostrum libero deserunt dolorum magni, ut, quas ab corporis unde placeat! Autem debitis excepturi voluptatum? Doloribus maxime voluptatem harum.</div>
+            <div id="optional">
+                <div><p>Get two free samples with every order </p>
+                    <a href="">SELECT YOUR SAMPLES</a>
+                </div>
+                <div><p>Sign in to see your Beauty Insider points
+                    & redeem your rewards</p></div>
+            </div>
+            <div id="cart-container">
+                   
+
+            </div>
            
            </div>
            
@@ -134,7 +257,70 @@
 
     </div>
     <div id="right">
-        <h1 id="cartTotal"> I am total</h1>
+     <div id="right-1stchild">
+      <div id="pay">
+        <div class="pay">
+            <p>Merchandise Subtotal</p>
+            <h3 id="cartTotal1">$0</h3>
+        </div>
+        <div class="pay">
+            <p class="underline">Shipping & Handling</p>
+            <h3 id="total">FREE</h3>
+        </div>
+        <div class="pay">
+            <p class="underline">Estimated Tax & Other Fees</p>
+            <h3 id="total">TBD</h3>
+        </div>
+        <hr>
+        <div class="pay">
+            <h2>Estimated Total</h2>
+            <h2 id="cartTotal2">$0</h2>
+        </div>
+        <p>or 4 payments of $39.00 with Klarna <br>or afterpay</p>
+        <br>
+        
+        <p> Shipping & taxes calculated during checkout</p>
+        <div id="button">
+           <button >Checkout Shipped Items</button>
+           <button>Pay With <img src="https://www.sephora.com/img/ufe/logo-paypal.svg" alt=" logo-paypal"></button>
+        </div>
+     </div>
+     
+    
+    </div>
+    <div id="promocode">
+        <p>View featured offers ></p>
+        <input type="text" placeholder="Promo or Reward Code">
+     </div>
+    
+     <hr>
+
+     <div style="display: flex;justify-content: left;margin-top: 15px;align-items: center;">
+        <img style="width: 10%;margin-right: 20px;"src="https://www.sephora.com/img/ufe/flags/ca.svg" alt="">
+        <p style="font-size: larger;text-decoration: underline;">Canada checkout></p>
+     </div>
+     
+     <div id="assitance">
+        <h3>Need assistance?</h3>
+        <p>1-877-SEPHORA (1-877-737-4672)<br>
+        
+            TTY: 1-888-866-9845</p>
+           <br>
+            <p>Free return shipping or return in store</p>
+            <br>
+            <p>We accept</p>
+            <div id="assiImages">
+                <img src="https://www.sephora.com/img/ufe/payments/sephora.svg" alt="">
+                <img src="https://www.sephora.com/img/ufe/payments/payPal.svg" alt="">
+                <img src="https://www.sephora.com/img/ufe/payments/visa.svg" alt="">
+                <img src="https://www.sephora.com/img/ufe/payments/masterCard.svg" alt="">
+                <img src="https://www.sephora.com/img/ufe/payments/discover.svg" alt="">
+                <img src="https://www.sephora.com/img/ufe/payments/americanExpress.svg" alt="">
+            </div>
+     </div>
+        
+
+       
     </div>
   </div>
 
