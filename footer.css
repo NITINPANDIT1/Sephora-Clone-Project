@@ -25,6 +25,8 @@
     width: 5mm;
 }
 .beautiful{
+    font-family: Times, "Times New Roman", Georgia, serif;
+    font-weight: 500;
     font-size: 25px;
 }
 .live_beauty, .store_img, .get_app, .text_alert, .credit_card{
@@ -48,6 +50,7 @@
     justify-content: left;
 } */
 .adress{
+    margin-top: 10px;
     display: block;
     /* position: absolute;
     left: 5; */
@@ -79,13 +82,32 @@
     gap: 20px;
 }
 .logos{
+    margin-top: -35px;
+    gap: 4mm;
     display: flex;
     justify-content: end;
 }
 .signup_button{
+    font-weight: 600;
+    font-size: 11px;
     color: white;
-    padding: 3px 10px;
+    padding: 7px 15px;
     border-radius: 18px;
     border: 1px solid white;
     background-color: black;
+}
+.placeholder{
+    font-size: smaller;
+}
+.check{
+    margin-top: -7px;
+    margin-left: -7px;
+    height: 8mm;
+    width: 4mm;
+}
+.su{
+    font-weight: 600;
+}
+.su_main{
+    display: flex;
 }
