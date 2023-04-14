@@ -1,8 +1,10 @@
+*{padding:0; margin:0; box-sizing: border-box; font-family:sans-serif;}
 #cartMain{
     border-top: 1px solid black;
     display: grid;
     grid-template-columns: 25% 70%;
     padding: 10px;
+    
 }
 #mainRight{
     display: block;
@@ -24,3 +26,222 @@
     padding: 5px;
     font-size: large;
 }
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+#main{
+    width: 65%;
+    /* border: 2px solid rgb(25, 239, 68); */
+    /* height: 800px; */
+    
+    display: grid;
+    grid-template-columns: 60% 35%;
+    /* padding: 2px; */
+    gap: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+#left{
+    /* width: 65%; */
+    border: 1px solid #acaaaa;
+    /* height: fit-content;   */
+    
+    
+}
+#right{
+    /* width: 35%; */
+    /* border: 2px solid black; */
+    height: fit-content;
+    padding: 0px 15px;
+}
+#up{
+    width: 100%;
+    height: 150px;
+    border: 1px solid #acaaaa;
+    display: flex;
+}
+#upleft{
+  flex-basis: 70%;
+  border: 1px solid #acaaaa;
+  padding-left: 15px;
+  padding-top:10px;
+  
+  
+}
+#upleft p {
+    display: flex;
+    align-items: center;
+}
+#upright{
+    flex-basis: 30%;
+    border: 1px solid #acaaaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#down{
+    /* margin-top: 30px; */
+    width: 100%;
+    /* height: 570px; */
+    border: 1px solid #acaaaa(0, 2, 8);
+    margin-top: 30px;
+    background-color: #f6f6f8;
+    
+}
+#upright button{
+    padding: 10px;
+    font-size: large;
+    border-radius: 25px;
+    background-color: #ffffff;
+    border: 3px solid black;
+    
+}
+#down-down{
+    background-color: #ffffff;
+    width: 95%;
+    border: 1px solid #acaaaa;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#down-down button{
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 24px;
+padding: 0.5em 1.125em;
+margin: 12px;
+border-radius: 25px;
+border: 1px solid black;
+/* align-items: center; */
+width: 38%;
+text-align: center;
+}
+#down-down div p {
+    display: flex;
+    align-items: center;
+}
+#pay{
+    display: block;
+    
+}
+.pay{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid yellow; */
+    font-size: 20px;
+}
+.underline:hover{
+ text-decoration: underline;
+
+}
+.underline{
+ font-weight: 50;
+}
+#pay p{
+ padding: 0px 10px;
+}
+#button{
+    display: flex;
+ 
+flex-direction: column;
+
+}
+#button button{
+font-size: 24px;
+padding: 0.5em 1.125em;
+margin: 12px;
+border-radius: 25px;
+border: 1px solid black;
+/* align-items: center; */
+
+text-align: center;
+}
+#button>button:first-child{
+    background-color: #cf112c;
+    color: white;
+    border: none;
+    
+}#button>button:first-child:hover{
+    background-color: #f32040;
+}
+#button button img{
+    width: 30%;
+  
+  
+}
+#right-1stchild{
+    border: 1px solid #acaaaa;
+    /* margin: 10px; */
+    
+}
+#promocode p{
+    margin-left: 60%;
+}
+#promocode p:hover{
+    text-decoration: underline;
+    font-weight: 300;
+}
+#promocode{
+    border: 1px solid #acaaaa;
+    text-align: center;
+    margin-top: 30px;
+    padding: .5rem;
+    
+}
+#promocode input{
+  font-size: x-large;
+  padding: .5rem 1rem ;
+  border-radius: 5px;
+  margin: 10px;
+}
+#assitance{
+    padding: 20px;
+    border: 1px solid #acaaaa;
+    margin-top: 20px;
+}
+#assiImages{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    /* border: 2px solid rgb(41, 2, 2); */
+    width: 90%;
+}
+#assiImages img{
+    width: 15%;
+    
+}
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#optional{
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: 100px;
+    gap: 2%;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+    
+
+}
+#optional div{
+    margin:2px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid black;
+   
+}
+#optional div p{
+    padding: 10px;
+}
+

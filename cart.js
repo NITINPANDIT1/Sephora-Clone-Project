@@ -1,5 +1,6 @@
 let arr = [
     { 
+      id:1,
       Name:"Paula's Choice",
       Description:"Mini Skin Perfecting 2% BHA Liquid Exfoliant",
       ItemNo :" 2421394",
@@ -8,30 +9,33 @@ let arr = [
       Price:`17.00`
     },
     { 
-        Name:"Paula's Choice",
+      id:2,
+        Name:"Karan Choice",
         Description:"Mini Skin Perfecting 2% BHA Liquid Exfoliant",
         ItemNo :" 2421394",
         Size:"1 oz/ 30 mL",
         ImageUrl:"https://www.sephora.com/productimages/sku/s2421394-main-zoom.jpg?imwidth=97",
-        Price:`17.00`
+        Price:`19.00`
       },
       { 
-        Name:"Paula's Choice",
-        Description:"Mini Skin Perfecting 2% BHA Liquid Exfoliant",
-        ItemNo :" 2421394",
-        Size:"1 oz/ 30 mL",
-        ImageUrl:"https://www.sephora.com/productimages/sku/s2421394-main-zoom.jpg?imwidth=97",
-        Price:`17.00`
-      },
-      { 
-        Name:"Paula's Choice",
-        Description:"Mini Skin Perfecting 2% BHA Liquid Exfoliant",
-        ItemNo :" 2421394",
-        Size:"1 oz/ 30 mL",
-        ImageUrl:"https://www.sephora.com/productimages/sku/s2421394-main-zoom.jpg?imwidth=97",
-        Price:`17.00`
-      }
-  
+        id:2,
+          Name:"Karan Choice",
+          Description:"Mini Skin Perfecting 2% BHA Liquid Exfoliant",
+          ItemNo :" 2421394",
+          Size:"1 oz/ 30 mL",
+          ImageUrl:"https://www.sephora.com/productimages/sku/s2421394-main-zoom.jpg?imwidth=97",
+          Price:`19.00`
+        },
+        { 
+          id:2,
+            Name:"Karan Choice",
+            Description:"Mini Skin Perfecting 2% BHA Liquid Exfoliant",
+            ItemNo :" 2421394",
+            Size:"1 oz/ 30 mL",
+            ImageUrl:"https://www.sephora.com/productimages/sku/s2421394-main-zoom.jpg?imwidth=97",
+            Price:`19.00`
+          },
+     
 ]
    localStorage.setItem("cart_list",JSON.stringify(arr))
 var cartData = JSON.parse(localStorage.getItem("cart_list"))||[];
@@ -45,7 +49,9 @@ function displayCart(cartData){
     titems.textContent = cartData.length;
 
  total = cartData.reduce(function(acc,elem){
-    return acc + Number(elem.Price);
+
+  console.log("elem",elem.Price,elem.quantity)
+    return acc + (Number(elem.Price)*Number(elem.quantity||1));
 },0)
 document.querySelector("#cartTotal1").textContent =`$${total}`;
 document.querySelector("#cartTotal2").textContent =`$${total}`;
@@ -78,6 +84,7 @@ if(cartData.length===0){
      name.textContent = elem.Name
 
      let price = document.createElement("h2")
+     
      price.textContent=`$${elem.Price}`
 
      right1.append(name,price)
@@ -103,25 +110,40 @@ if(cartData.length===0){
      let right5 =document.createElement("div")
      right5.className ="rightChilds"
      let opt = document.createElement("select")
+
+
+     console.log("Elem quanity",elem.quantity)
+    
      opt.name = 1
      opt.value =1;
      opt.id="option"
       let opt1 = document.createElement("option")
       opt1.value =1
       opt1.textContent=1
+
+      if(+elem.quantity ===1)
+      opt1.setAttribute("selected","selected")
       let opt2 = document.createElement("option")
       opt2.value =2
       opt2.textContent=2
+      
+      if(+elem.quantity ===2)
+      opt2.setAttribute("selected","selected")
       let opt3 = document.createElement("option")
       opt3.value =3
       opt3.textContent=3
 
+      if(+elem.quantity ===3)
+      opt3.setAttribute("selected","selected")
       let opt4 = document.createElement("option")
       opt4.value =4
       opt4.textContent=4
+      if(+elem.quantity ===4)
+      opt4.setAttribute("selected","selected")
 
-      opt.addEventListener("change",function(){
-        changePrice(elem,idx)
+      opt.addEventListener("change",function(e){
+
+        changePrice(elem,idx,e.target.value)
       })
 
       opt.append(opt1,opt2,opt3,opt4)
@@ -154,13 +176,22 @@ if(cartData.length===0){
 }
 
 
-function  changePrice(elem,idx){
-  let x = document.getElementById("option").value;
-  for(var i=0;i<x;i++){
-    cartData.push(elem)
-  }
-  
-  displayCart(cartData)
+function  changePrice(elem,idx,quantity){
+
+  console.log("Element",elem);
+  console.log("idx",idx)
+
+
+  const updated= cartData.map((el,index)=>{
+    if(index===idx)
+    return {...el,quantity:quantity}
+    else
+    return el;
+  })
+
+
+ console.log("Updated",updated)
+  displayCart(updated)
   
 
 }
@@ -169,3 +200,11 @@ function remove(elem,idx){
   displayCart(cartData)
 }
 
+function goToPayment(){
+  window.location.href = "payment.html"
+}
+
+import footer from "./footer.js"
+
+let foot = document.getElementById("foot")
+foot.innerHTML = footer();
