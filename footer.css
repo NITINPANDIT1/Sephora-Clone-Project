@@ -1,0 +1,91 @@
+.footer{
+    font-family: "bello-pro-1", "bello-pro-2", sans-serif;
+    padding: 7%;
+    background-color: black;
+    color: white;
+}
+.abt{
+    font-weight: 750;
+}
+.firststpart{
+   font-size: 10.5px;
+    display: flex;
+    justify-content: space-around;
+}
+.secondpart{
+    font-size: 10.5px;
+    display: flex;
+    justify-content: space-around;
+    line-height: 22px;
+}
+.flag{
+    margin-top: 2mm;
+    margin-right: 2mm;
+    height: 5mm;
+    width: 5mm;
+}
+.beautiful{
+    font-size: 25px;
+}
+.live_beauty, .store_img, .get_app, .text_alert, .credit_card{
+    height: 5mm;
+    width: 5mm;
+    margin-right: 2mm;
+}
+.livebeauty, .store, .getapp,.textalert, .creditcard{
+    display: flex;
+    justify-content: right;
+}
+.thirdpart{
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px white;
+    line-height: 15px;
+    font-size: 10px;
+}
+/* .thirdpart > div{
+    display: block;
+    justify-content: left;
+} */
+.adress{
+    display: block;
+    /* position: absolute;
+    left: 5; */
+    margin-left: -555px; 
+
+}
+.columnone{
+    display: ;
+}
+.columnfour div{
+    text-align: center;
+    display:flex;
+    align-items: center;
+}
+.columnfive{
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+.terms_and_co{
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+}
+.cont_no{
+    margin-left: 0px;
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+}
+.logos{
+    display: flex;
+    justify-content: end;
+}
+.signup_button{
+    color: white;
+    padding: 3px 10px;
+    border-radius: 18px;
+    border: 1px solid white;
+    background-color: black;
+}
