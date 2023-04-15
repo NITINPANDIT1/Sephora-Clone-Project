@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+     .slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border: 2px solid black;
+}
+.slider-container {
+  display: flex;
+  width: calc(100% * 10);
+  transition: transform 0.5s ease;
+  gap: 15px;
+  margin-top: 100px;
+}
+.slider-item {
+  /* flex: 1 0 100%; */
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border: 2px solid green;
+  flex-basis:4% ;
+  flex-direction: column;
+  
+  
+
+}
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgb(64, 63, 63);
+  border: none;
+  font-size: 24px;
+  color: #989595;
+  cursor: pointer;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+}
+.slider-btn-prev {
+  left: 0;
+}
+.slider-btn-next {
+  right: 0;
+}
+.slider-item img{
+    width: 100%;
+    height: 80%;
+}
+.slider-bottom{
+    border: 1px solid red;
+    width: 100%;
+    padding: 50px;
+    background-color: #84739d;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+#second{
+    display: flex;
+    margin-top:200px;
+    
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  flex-basis: 15%;
+  
+}
+
+.product img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.product h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+}
+.heading{
+    font-size: xx-large;
+    font-weight: bolder;
+    margin:100px 80% -10% 0% 
+}
+.box {
+  width: 200px;
+  /* height: 100px; */
+  /* background-color: #ccc; */
+  /* margin-bottom: 20px; */
+  text-align: center;
+  /* line-height: 100px; */
+  transition: transform 0.2s ease;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+    </style>
+</head>
+<body>
+    <div id="nav"></div>
+    <div id="container">
+        <div class="slider">
+            <div class="slider-container">
+              <div class="slider-item">
+               
+                <img src="https://www.sephora.com/contentimages/2023-april-skin-bundle-c-site-home-page-hero-banner-beauty-and-product-us-can-kohls-20ish.jpg?imwidth=545" alt="">
+               <div class="slider-bottom">
+                    <div>
+                        <h1>You're 50ish+ ?</h1>
+                    </div>
+                    <div><p>Treat blemishes with exfoliators and pore-refining formulas. </p></div>
+                    <div><a href="https://www.sephora.com/beauty/skin-care-by-age?icid2=homepage_slideshow_skincare_animation_skinbyage0423_fy232524_broadcast_us_teens20s_banner_rwd_041423">SHOP NOW &gt</a></div>
+               </div>
+               
+               
+            </div>
+              <div class="slider-item">
+               
+                <img src="https://www.sephora.com/contentimages/2023-april-skin-bundle-c-site-home-page-hero-banner-beauty-and-product-us-can-kohls-30ish.jpg?imwidth=545" alt="">
+                <div class="slider-bottom">
+                    <div>
+                        <h1>You're 50ish+ ?</h1>
+                    </div>
+                    <div><p>Treat blemishes with exfoliators and pore-refining formulas. </p></div>
+                    <div><a href="https://www.sephora.com/beauty/skin-care-by-age?icid2=homepage_slideshow_skincare_animation_skinbyage0423_fy232524_broadcast_us_teens20s_banner_rwd_041423">SHOP NOW &gt</a></div>
+              
+                   </div>
+            </div>
+              <div class="slider-item">
+                <img src="https://www.sephora.com/contentimages/2023-april-skin-bundle-c-site-home-page-hero-banner-beauty-and-product-us-kohls-40ish.jpg?imwidth=545" alt=""> 
+                <div class="slider-bottom">
+                    <div>
+                        <h1>You're 50ish+ ?</h1>
+                    </div>
+                    <div><p>Treat blemishes with exfoliators and pore-refining formulas. </p></div>
+                    <div><a href="https://www.sephora.com/beauty/skin-care-by-age?icid2=homepage_slideshow_skincare_animation_skinbyage0423_fy232524_broadcast_us_teens20s_banner_rwd_041423">SHOP NOW &gt</a></div>
+              
+                   </div>
+            </div>
+              <div class="slider-item">
+              
+                <img src="https://www.sephora.com/contentimages/2023-april-skin-bundle-c-site-home-page-hero-banner-beauty-and-product-us-can-kohls-50ish.jpg?imwidth=545" alt="">  
+                <div class="slider-bottom">
+                    <div>
+                        <h1>You're 50ish+ ?</h1>
+                    </div>
+                    <div><p>Treat blemishes with exfoliators and pore-refining formulas. </p></div>
+                    <div><a href="https://www.sephora.com/beauty/skin-care-by-age?icid2=homepage_slideshow_skincare_animation_skinbyage0423_fy232524_broadcast_us_teens20s_banner_rwd_041423">SHOP NOW &gt</a></div>
+              
+                   </div>
+            </div>
+              <div class="slider-item">
+               <img src="https://www.sephora.com/contentimages/2023-4-5-rare-beauty-summer-newness-site-desktop-mobile-home-page-rwd-hero-banner-1000x750-en-us.jpg?imwidth=545" alt="">  
+               <div class="slider-bottom">
+                <div>
+                    <h1>You're 50ish+ ?</h1>
+                </div>
+                <div><p>Treat blemishes with exfoliators and pore-refining formulas. </p></div>
+                <div><a href="https://www.sephora.com/beauty/skin-care-by-age?icid2=homepage_slideshow_skincare_animation_skinbyage0423_fy232524_broadcast_us_teens20s_banner_rwd_041423">SHOP NOW &gt</a></div>
+          
+               </div>
+            </div>
+              <div class="slider-item">
+              <img src="https://www.sephora.com/contentimages/homepage/040423/Homepage/RWD/2023-03-06-slotting-minis-v2-march-hybrid-site-rwd-home-page-hero-banner-us-ca-handoff_01-1280x1280.jpeg?imwidth=545" alt=""> 
+              <div class="slider-bottom">
+                <div>
+                    <h1>You're 50ish+ ?</h1>
+                </div>
+                <div><p>Treat blemishes with exfoliators and pore-refining formulas. </p></div>
+                <div><a href="https://www.sephora.com/beauty/skin-care-by-age?icid2=homepage_slideshow_skincare_animation_skinbyage0423_fy232524_broadcast_us_teens20s_banner_rwd_041423">SHOP NOW &gt</a></div>
+          
+               </div>
+            </div>
+              <!-- <div class="slider-item">Slide 7</div>
+              <div class="slider-item">Slide 8</div>
+              <div class="slider-item">Slide 9</div>
+              <div class="slider-item">Slide 10</div> -->
+            </div>
+            <button class="slider-btn slider-btn-prev">&lt;</button>
+            <button class="slider-btn slider-btn-next">&gt;</button>
+          </div>
+
+        
+             <div class="heading"><h1>Chosen For You</h1></div>
+             <div id="second">
+            <div class="product box" >
+                <img src="https://www.sephora.com/productimages/sku/s2672962-main-zoom.jpg?imwidth=166" alt="Product Image">
+                <h3>Paula's Choice</h3>
+                <p>Favorite's Mini Kit</p> </div>
+              <div class="product box">
+                <img src="https://www.sephora.com/productimages/sku/s2672962-main-zoom.jpg?imwidth=166" alt="Product Image">
+                <h3>Paula's Choice</h3>
+                <p>Favorite's Mini Kit</p> </div>
+              <div class="product box">
+                <img src="https://www.sephora.com/productimages/sku/s2672962-main-zoom.jpg?imwidth=166" alt="Product Image">
+                <h3>Paula's Choice</h3>
+                <p>Favorite's Mini Kit</p> </div>
+              <div class="product box">
+                <img src="https://www.sephora.com/productimages/sku/s2672962-main-zoom.jpg?imwidth=166" alt="Product Image">
+                <h3>Paula's Choice</h3>
+                <p>Favorite's Mini Kit</p> </div>
+              <div class="product box">
+                <img src="https://www.sephora.com/productimages/sku/s2672962-main-zoom.jpg?imwidth=166" alt="Product Image">
+                <h3>Paula's Choice</h3>
+                <p>Favorite's Mini Kit</p> </div>
+              <div class="product box">
+                <img src="https://www.sephora.com/productimages/sku/s2672962-main-zoom.jpg?imwidth=166" alt="Product Image">
+                <h3>Paula's Choice</h3>
+                <p>Favorite's Mini Kit</p> </div>
+              
+          </div>
+          
+          <div class="heading"><h1>Chosen For You</h1></div>
+          <div id="second">
+         <div class="product box" >
+             <img src="https://www.sephora.com/productimages/sku/s2672962-main-zoom.jpg?imwidth=166" alt="Product Image">
+             <h3>Paula's Choice</h3>
+             <p>Favorite's Mini Kit</p> </div>
+           <div class="product box">
+             <img src="https://www.sephora.com/productimages/sku/s2672962-main-zoom.jpg?imwidth=166" alt="Product Image">
+             <h3>Paula's Choice</h3>
+             <p>Favorite's Mini Kit</p> </div>
+           <div class="product box">
+             <img src="https://www.sephora.com/productimages/sku/s2672962-main-zoom.jpg?imwidth=166" alt="Product Image">
+             <h3>Paula's Choice</h3>
+             <p>Favorite's Mini Kit</p> </div>
+           <div class="product box">
+             <img src="https://www.sephora.com/productimages/sku/s2672962-main-zoom.jpg?imwidth=166" alt="Product Image">
+             <h3>Paula's Choice</h3>
+             <p>Favorite's Mini Kit</p> </div>
+           <div class="product box">
+             <img src="https://www.sephora.com/productimages/sku/s2672962-main-zoom.jpg?imwidth=166" alt="Product Image">
+             <h3>Paula's Choice</h3>
+             <p>Favorite's Mini Kit</p> </div>
+           <div class="product box">
+             <img src="https://www.sephora.com/productimages/sku/s2672962-main-zoom.jpg?imwidth=166" alt="Product Image">
+             <h3>Paula's Choice</h3>
+             <p>Favorite's Mini Kit</p> </div>
+           
+       </div>
+       
+    </div>
+    <div id="foot"></div>
+</body>
+<script type="module">
+    import header from "./header.js"
+    document.getElementById("nav").innerHTML = header();
+   import footer from "./footer.js"
+
+  let foot = document.getElementById("foot")
+   foot.innerHTML = footer();
+
+//    /slider
+const sliderContainer = document.querySelector('.slider-container');
+const prevBtn = document.querySelector('.slider-btn-prev');
+const nextBtn = document.querySelector('.slider-btn-next');
+let slideIndex = 0;
+
+function slide() {
+  sliderContainer.style.transform = `translateX(-${slideIndex * 6}%)`;
+}
+
+// Call slide function on page load
+slide();
+
+prevBtn.addEventListener('click', () => {
+  slideIndex = (slideIndex > 0) ? slideIndex - 1 : 0;
+  slide();
+});
+
+nextBtn.addEventListener('click', () => {
+  slideIndex = (slideIndex < 5) ? slideIndex + 1 : 5;
+  slide();
+});
+
+</script>
+</html>
