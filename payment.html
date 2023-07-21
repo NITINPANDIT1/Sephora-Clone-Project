@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Payment Page </title>
+	<link rel="stylesheet"  href="payment.css">
+	<link rel="stylesheet" href="footer.css">
+</head>
+<body>
+<header>
+	<div class="container">
+		<div class="left">
+			<h3>BILLING ADDRESS</h3>
+			<form>
+				<h3>Full name</h3>
+				<input type="text" name="" placeholder="Enter name">
+				<h3>Email</h3>
+				<input type="text" name="" placeholder="Enter email">
+
+				<h3>Address</h3>
+				<input type="text" name="" placeholder="Enter address">
+				
+				<h3>City</h3>
+				<input type="text" name="" placeholder="Enter City">
+				<div id="zip">
+					<label>
+						<h3>State</h3>
+						<select>
+							<option>Choose State..</option>
+							<option>Alabama</option>
+							<option>Arizona</option>
+							<option>California</option>
+							<option>Delaware</option>
+							<option >Florida</option>
+							<option >Georgia</option>
+								
+						</select>
+					</label>
+						<label>
+						<h3>Zip code</h3>
+						<input type="number" name="" placeholder="Zip code">
+					</label>
+				</div>
+			</form>
+		</div>
+		<div class="right">
+			<h3>PAYMENT</h3>
+			<form>
+				 <h3>Accepted Cards</h3><br>
+				<img src="image/card1.png" width="100">
+			
+				<img src="image/americanExpress.svg" width="50">
+				<img src="image/payPal.svg" width="50">
+				<img src="image/sephora.svg" width="50">
+				<img src="image/discover.svg" width="50">
+				<br><br>
+
+				<h3>Card Number</h3>
+			<input type="text" name="" placeholder="Enter card number">
+				
+				 <h3>Exp Month</h3>
+				<input type="text" name="" placeholder="Enter Month">
+				<div id="zip">
+					<label>
+						<h3>Exp Year</h3>
+						<select>
+							<option>Choose Year..</option>
+							<option>2023</option>
+							<option>2024</option>
+							<option>2025</option>
+							<option>2026</option>
+						</select>
+					</label>
+						<label>
+						 <h3>CVV</h3>
+						<input type="number" name="" placeholder="CVV">
+					</label>
+				</div>
+			</form>
+			<input type="submit" name="" value="Proceed to Checkout">
+		</div>
+	</div>
+</header>
+<div id="foot"> </div>
+
+
+</body>
+<script type="module" src="./payment.js"></script>
+</html>

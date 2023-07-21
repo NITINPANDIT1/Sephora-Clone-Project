@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket | Sephora</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="footer.css">
+    <style> </style>
+</head>
+<body>
+    <h1 style="position: relative;left: 17.5%;">My Basket</h1>
+  <div id="main">
+    
+
+    <div id="left">
+        <div id="up">
+            <div id="upleft">
+                <h2>The Sephora Credit Card Program</h2>
+                <p><img src="https://www.sephora.com/contentimages/creditcard/cardicon/CreditCard.svg" style="width: 10%;">25% on this order when you open and use either Sephora Credit Card today*</p>
+                <p>*Subject to credit approval. Exclusions apply.</p>
+            </div>
+            <div id="upright">
+                <button>SEE DETAILS</button>
+                
+            </div>
+        </div>
+        <!-- update cart here -->
+        
+        <div id="down">
+            <div style="flex-basis: 100%; padding: 5px;" >
+                <h1 >Get It Shipped (<span id="totalItems">0</span>)</h1>
+            </div>
+          
+           <div id="down-down">
+            <div >
+                <p><img style="width: 10%;" src="https://c8.alamy.com/comp/2F4RK7F/fast-delivery-truck-icon-express-delivery-line-symbol-on-white-background-editable-vector-illustration-2F4RK7F.jpg" alt=""> Insiders enjoy FREE standard shipping on all orders.
+
+                  <br>  Free returns on all purchases.*</p>
+            </div>
+            <br>
+            <div id="optional">
+                <div><p>Get two free samples with every order </p>
+                    <a href="">SELECT YOUR SAMPLES</a>
+                </div>
+                <div><p>Sign in to see your Beauty Insider points
+                    & redeem your rewards</p></div>
+                    
+            </div>
+            <hr>
+            
+            <div id="cart-container">
+                <div>
+                    <h3>Your basket is currently empty <br>
+
+                        Please sign in if you are trying to retrieve a basket created in the past.
+                    </h3>
+                    <button id="signin">Sign In</button>
+                </div>
+                
+               
+
+            </div>
+           
+           </div>
+           
+
+        </div>
+
+    </div>
+    <div id="right">
+     <div id="right-1stchild">
+      <div id="pay">
+        <div class="pay">
+            <p>Merchandise Subtotal</p>
+            <h3 id="cartTotal1">$0</h3>
+        </div>
+        <div class="pay">
+            <p class="underline">Shipping & Handling</p>
+            <h3 id="total">FREE</h3>
+        </div>
+        <div class="pay">
+            <p class="underline">Estimated Tax & Other Fees</p>
+            <h3 id="total">TBD</h3>
+        </div>
+        <hr>
+        <div class="pay">
+            <h2>Estimated Total</h2>
+            <h2 id="cartTotal2">$0</h2>
+        </div>
+        <p>or 4 payments of $39.00 with Klarna <br>or afterpay</p>
+        <br>
+        
+        <p> Shipping & taxes calculated during checkout</p>
+        <div id="button">
+           <button onclick="goToPayment()" >Checkout Shipped Items</button>
+           <button>Pay With <img src="https://www.sephora.com/img/ufe/logo-paypal.svg" alt=" logo-paypal"></button>
+        </div>
+     </div>
+     
+    
+    </div>
+    <div id="promocode">
+        <p>View featured offers ></p>
+        <input type="text" placeholder="Promo or Reward Code">
+     </div>
+    
+     <hr>
+
+     <div style="display: flex;justify-content: left;margin-top: 15px;align-items: center;">
+        <img style="width: 10%;margin-right: 20px;"src="https://www.sephora.com/img/ufe/flags/ca.svg" alt="">
+        <p style="font-size: larger;text-decoration: underline;">Canada checkout></p>
+     </div>
+     
+     <div id="assitance">
+        <h3>Need assistance?</h3>
+        <p>1-877-SEPHORA (1-877-737-4672)<br>
+        
+            TTY: 1-888-866-9845</p>
+           <br>
+            <p>Free return shipping or return in store</p>
+            <br>
+            <p>We accept</p>
+            <div id="assiImages">
+                <img src="https://www.sephora.com/img/ufe/payments/sephora.svg" alt="">
+                <img src="https://www.sephora.com/img/ufe/payments/payPal.svg" alt="">
+                <img src="https://www.sephora.com/img/ufe/payments/visa.svg" alt="">
+                <img src="https://www.sephora.com/img/ufe/payments/masterCard.svg" alt="">
+                <img src="https://www.sephora.com/img/ufe/payments/discover.svg" alt="">
+                <img src="https://www.sephora.com/img/ufe/payments/americanExpress.svg" alt="">
+            </div>
+     </div>
+        
+
+       
+    </div>
+  </div>
+  <div id="foot"></div>
+
+    <script src="cart.js" type="module">
+
+    </script>
+</body>
+</html>
